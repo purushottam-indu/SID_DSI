@@ -1,0 +1,45 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "4fabf89d-92b8-4bb5-8099-c51c54ec1807",
+    "packageName": "com.example.textapp",
+    "developer": {
+      "name": "Your Name",
+      "websiteUrl": "https://purushottam-indu.github.io/SID_DSI",
+      "privacyUrl": "https://purushottam-indu.github.io/SID_DSI/privacy",
+      "termsOfUseUrl": "https://purushottam-indu.github.io/SID_DSI/terms"
+    },
+    "name": {
+      "short": "eclairs",
+      "full": "SID_DSI"
+    },
+    "description": {
+      "short": "sample for integrating into teams.",
+      "full": "sample react app hosted on github pages for integrating into teams."
+    },
+    "icons": {
+      "color": "color.png",
+      "outline": "outline.png"
+    },
+    "accentColor": "#E6E6FA",
+    "staticTabs": [
+      {
+        "entityId": "home",
+        "name": "Home",
+        "contentUrl": "https://purushottam-indu.github.io/SID_DSI/",
+        "websiteUrl": "https://purushottam-indu.github.io/SID_DSI/",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "purushottam-indu.github.io"
+    ]
+  }
+  

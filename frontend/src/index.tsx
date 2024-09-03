@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import { initializeIcons } from "@fluentui/react";
@@ -9,11 +9,17 @@ import Layout from "./pages/layout/Layout";
 import Chat from "./pages/AIchat/Chat";
 import { ThemeProvider } from "./ThemeContext";
 
+import { app } from '@microsoft/teams-js';
+
+
 initializeIcons();
 function App() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [promptTemplate, setPromptTemplate] = useState<string>("");
 
+    useEffect(() => {
+        app.initialize();
+      }, []);
     // Define the router configuration
     const router = createHashRouter([
         {
